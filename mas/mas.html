@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="estilomas.css">
+	<title>Mas</title>
+	<link rel="icon" href="../imagenes/Logo-Sigma.ico">
+</head>
+<body>
+	<nav class="nav">
+		<div class="menu-content">
+			<div class="menu-item"><a class="link-menu" href="../index.html"><img src="../imagenes/Logo-Sigma.ico" alt="logo-sigma" title="sigma-icon" class="menu-icon"></a></div>
+			<div class="menu-item"><a class="link-menu" href="../hardware/hardware.html">HARDWARE</a></div>
+			<div class="menu-item"><a class="link-menu" href="../insumos/insumos.html">INSUMOS</a></div>
+			<div class="menu-item"><a class="link-menu" href="../notebook/notebook.html">NOTEBOOK'S</a></div>
+			<div class="menu-item"><a class="link-menu" href="../servicios/servicios.html">SERVICIOS</a></div>
+		</div>
+	</nav>
+	<main class="main">
+		<form class="main-form">
+			<div class="main-agregar">
+				<img src="../imagenes/icon-agregar.svg" class="icon-form">
+				<input type="text" class="producto" placeholder="agrega un producto">
+				<button class="btn-agregar">Agregar</button>
+		    </div>
+		    <div class="box-content">
+		    	<!-- HARDWARE -->
+		    <div class="content-checkbox">
+		    	<p class="txt-check ">Hardware</p>
+		    	<input type="checkbox" class="check-box hardware" value="hardware" id="hardware">
+		    	<div class="sub-cate-content">
+		    		<select class="sub-cate-hard" form="hardware">
+		    			<option value="">Opciones</option>
+		    			<option value="eq-Armados">Eq-armados</option>
+		    			<option value="memorias">Memorias</option>
+		    			<option value="discos">Discos-Rigidos</option>
+		    			<option value="monit-tv">Monitores</option>
+		    			<option value="teclados">Teclados</option>
+		    			<option value="mouses">Mouses</option>
+		    			<option value="joystick">Joystick</option>
+		    			<option value="impresoras">impresoras</option>
+		    			<option value="audio">Audio</option>
+		    			<option value="camaras">Camaras</option>
+		    			<option value="placas">placas</option>
+		    			<option value="fuentes">Fuentes</option>
+		    			<option value="redes">Redes</option>
+		    		</select>
+		    	</div>
+		    	</div>
+		    	<!-- INSUMOS -->
+		    <div class="content-checkbox">
+		    	<p class="txt-check">Insumos</p>
+		    	<input type="checkbox" class="check-box insumos" value="insumos" id="insumos">
+		    		<div class="sub-cate-content">
+		    		<select class="sub-cate-insu " form="insumos">
+		    			<option value="">Opciones</option>
+		    			<option value="papel">Papel</option>
+		    			<option value="cd-dvd">CD/DVD</option>
+		    			<option value="cartuchos">Cartuchos</option>
+		    			<option value="cintas">Cintas</option>
+		    			<option value="fundas">Fundas</option>
+		    			<option value="cables">Cables</option>
+		    			<option value="accesorios">Accesorios</option>
+		    			<option value="escritorio">Escritorio</option>
+		    		</select>
+		    	</div>
+		    </div>
+		    <!-- SERVICIOS -->
+		    <div class="content-checkbox">
+		    	<p class="txt-check">Servicios</p>
+		    	<input type="checkbox" class="check-box servicios" value="servicios" id="servicios">
+		    	<div class="sub-cate-content">
+		    		<select class="sub-cate-serv" form="servicios">
+		    			<option value="">Opciones</option>
+		    			<option value="mostrador">Mostrador</option>
+		    			<option value="impresiones">Impresiones</option>
+		    			<option value="grabaciones">Grabaciones</option>
+		    			<option value="Tecnico">Serv. Tecnico</option>
+		    		</select>
+		    	</div>
+		    </div>
+		    <!-- NOTEBOOKS -->
+		    <div class="content-checkbox">
+		    	<p class="txt-check">Notebooks</p>
+		    	<input type="checkbox" class="check-box notebooks" value="notebooks">
+		    </div>
+		  </div>
+		    <div class="precio">
+		    	<input type="number" class="lista" placeholder="precio lista">
+		    	<input type="number" class="contado" placeholder="precio contado">
+		    </div>
+		</form>
+		<div class="productos">
+			<h2 class="h2 art-text">Producto</h2>
+			<h2 class="h2">Categoria</h2>
+			<h2 class="h2">P. lista</h2>
+			<h2 class="h2">P. Contado</h2>
+			<img src="../imagenes/icon-tildes2.svg" class="h2 icon-confirm-all">
+			</div>
+			<div class="listaProd">
+			</div>	
+	</main>
+	<script type="text/javascript" src="./producto.js"></script>
+</body>
+</html>
